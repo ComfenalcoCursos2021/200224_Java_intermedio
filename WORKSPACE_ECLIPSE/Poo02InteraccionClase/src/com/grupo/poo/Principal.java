@@ -3,24 +3,40 @@ package com.grupo.poo;
 public class Principal {
 	
 	public static void main(String[] args) {
+		
+		
+		int a = 5;
+		int b = 7;
+		int suma = a + b;
+		System.out.println(suma);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		// voy a crear una instancia de la clase Contenedor que se llamará fotocopia
-		Contenedor contenedor20Lts = new Contenedor();
+		Contenedor c20 = new Contenedor();
 		// voy a crear una instancia de la clase Contenedor que se llamará fotocopia2
-		Contenedor fotocopia2 = new Contenedor();		
+		Contenedor f2 = new Contenedor();		
 		
-		contenedor20Lts.cantidadCajas = 15;
-		contenedor20Lts.cantidadArticulosEnCaja = 30;
+		c20.cantidadCajas = 15;
+		c20.cantidadArticulosEnCaja = 30;
 		
-		fotocopia2.cantidadCajas = 10;
+		f2.cantidadCajas = 10;
 		
-		System.out.println(contenedor20Lts.cantidadCajas);
-		System.out.println(fotocopia2.cantidadCajas);
+		System.out.println(c20.cantidadCajas);
+		System.out.println(f2.cantidadCajas);
 		
 		System.out.println("=======================");
-		fotocopia2 = contenedor20Lts;
-		fotocopia2.cantidadCajas = 500;
-		System.out.println("contenedor20Lts->"+contenedor20Lts.cantidadCajas);
-		System.out.println("fotocopia2->"+fotocopia2.cantidadCajas);
+		f2 = c20;
+		f2.cantidadCajas = 500;
+		System.out.println("contenedor20Lts->"+c20.cantidadCajas);
+		System.out.println("fotocopia2->"+f2.cantidadCajas);
 		
 		System.out.println("Nuevo Termino !!");
 	}
