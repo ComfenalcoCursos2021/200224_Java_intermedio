@@ -6,6 +6,9 @@ public class Calculadora {
 		int resultado = primerValor + segundoValor;
 		return resultado;
 	}
+	public double valorObsoluto(double valor) {
+		return Math.abs(valor);
+	}
 	public double elevar(double base, double exponente) {
 		double  resultado = Math.pow(base, exponente);
 		return resultado;
