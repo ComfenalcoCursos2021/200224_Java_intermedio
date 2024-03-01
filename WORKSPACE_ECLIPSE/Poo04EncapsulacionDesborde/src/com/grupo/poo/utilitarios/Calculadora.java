@@ -1,5 +1,7 @@
 package com.grupo.poo.utilitarios;
 
+import java.util.Scanner;
+
 public class Calculadora {
 
 	public int suma(int primerValor, int segundoValor) {
@@ -36,4 +38,29 @@ public class Calculadora {
 		}
 
 	}
+	
+	public double logaritmo(double valor) {
+		double respuesta =  Math.log10(valor);
+		return respuesta;
+	}
+	
+	public void programaLogaritmo() {
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("===================================");
+		System.out.println("Ingrese un valor para hallarle el logaritmo");
+		double numLog = teclado.nextDouble();
+		double resultLog = this.logaritmo(numLog);
+		System.out.println("El logaritmo es " + resultLog);
+		System.out.println("===================================");
+	}
+	
+	public void progranaAreaCirculo(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese el radio");
+        double radio = entrada.nextDouble();
+        double pi = Math.PI;
+        double resultado = pi * Math.pow(radio, 2);
+        System.out.println("El area del cilulo es: "+ resultado);
+    }
+	
 }

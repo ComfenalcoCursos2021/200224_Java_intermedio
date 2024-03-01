@@ -79,8 +79,13 @@ public class Principal {
 		 * resta
 		 * */
 		
+		double respuestaLogaritmo = calc.logaritmo(100);
+		calc.programaLogaritmo();
+		calc.programaLogaritmo();
+		calc.programaLogaritmo();
+		calc.programaLogaritmo();
 		
-		
+		calc.progranaAreaCirculo();
 		
 		System.out.println("Nuevo Termino !!");
 	}
