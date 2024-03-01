@@ -6,7 +6,10 @@ public class Calculadora {
 		int resultado = primerValor + segundoValor;
 		return resultado;
 	}
-	
+	public double elevar(double base, double exponente) {
+		double  resultado = Math.pow(base, exponente);
+		return resultado;
+	}
 	public double raizCuadrada(double valor) {
 		double respuesta =  Math.sqrt(valor);
 		
