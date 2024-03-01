@@ -1,5 +1,6 @@
 package com.grupo.poo;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 import com.grupo.poo.utilitarios.Calculadora;
@@ -51,6 +52,33 @@ public class Principal {
 		int cantEscalas = teclado.nextInt();
 		
 		calc.pintarEscala(valorEscala,cantEscalas);
+		
+		System.out.println("===================================");
+		System.out.println("Ingrese un valor para hallarle la raiz");
+		System.out.println("--recuerde que el separador decimal es la coma ','");
+		double numeroParaRaiz = teclado.nextDouble();
+		double resultadoRaiz = calc.raizCuadrada(numeroParaRaiz);
+		DecimalFormat df = new DecimalFormat("#.####");
+		
+		System.out.println("La raiz es " + resultadoRaiz);
+		
+		String valorFormateado = df.format(resultadoRaiz);
+		
+		System.out.println("La raiz formateada es " + valorFormateado);
+		
+		System.out.println("La raiz es (NUMERO ORIGINAL) " + resultadoRaiz + resultadoRaiz );
+		
+		System.out.println("La COMPROBACION " + (resultadoRaiz * resultadoRaiz)   );
+		
+		/*
+		 * Parentesis
+		 * exponentes
+		 * multiplicacion
+		 * division
+		 * suma
+		 * resta
+		 * */
+		
 		
 		
 		
