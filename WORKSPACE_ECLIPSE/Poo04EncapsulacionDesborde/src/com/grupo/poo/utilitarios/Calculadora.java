@@ -44,6 +44,11 @@ public class Calculadora {
 		return respuesta;
 	}
 	
+	
+	
+	
+	
+	
 	public void programaLogaritmo() {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("===================================");
@@ -53,6 +58,19 @@ public class Calculadora {
 		System.out.println("El logaritmo es " + resultLog);
 		System.out.println("===================================");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void progranaAreaCirculo(){
         Scanner entrada = new Scanner(System.in);

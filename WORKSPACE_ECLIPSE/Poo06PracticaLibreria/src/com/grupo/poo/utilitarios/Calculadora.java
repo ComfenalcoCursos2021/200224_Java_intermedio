@@ -4,10 +4,22 @@ import java.util.Scanner;
 
 public class Calculadora {
 
+	/**
+	 * Esta funcion suma
+	 * @param primerValor el primer valor para sumar
+	 * @param segundoValor el segundo valor para sumar
+	 * @return el valor sumado
+	 */
 	public int suma(int primerValor, int segundoValor) {
 		int resultado = primerValor + segundoValor;
 		return resultado;
 	}
+	/**
+	 * Esta funcion eleva un numero a otro
+	 * @param base la base
+	 * @param exponente el exponente
+	 * @return el resultade de elevar el numero
+	 */
 	public double elevar(double base, double exponente) {
 		double  resultado = Math.pow(base, exponente);
 		return resultado;
