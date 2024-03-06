@@ -41,7 +41,15 @@ public class BombilloSmart extends Bombillo {
 		this.intensidad = intensidad;
 	}
 	
-	public void dimer(int porcentaje) {
+	public void dimer(int porcentaje) throws Exception {
+		
+		if(porcentaje > 100 || porcentaje < 0) {
+			throw new Exception("FALLO POR EL PORCENTAJE MALO");
+		}
+		
+		int lumen = (cantidadLumens * porcentaje) / 100;
+		this.intensidad = lumen;
+		//System.out.println("El bombillo esta al "+lumen+"%");		
 		
 	}
 	
