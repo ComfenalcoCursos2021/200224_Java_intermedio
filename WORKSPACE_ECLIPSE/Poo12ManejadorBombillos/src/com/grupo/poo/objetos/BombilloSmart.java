@@ -48,7 +48,10 @@ public class BombilloSmart extends Bombillo {
 		int lumen = (cantidadLumens * porcentaje) / 100;
 		this.intensidad = lumen;		
 	}
-	
+	public void dimer(String palabraPorcentaje) throws Exception  {
+		int porcentaje = Integer.parseInt(palabraPorcentaje);
+		this.dimer(porcentaje);		
+	}
 	
 	
 	

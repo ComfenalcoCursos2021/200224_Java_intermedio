@@ -26,14 +26,13 @@ public class Lanzador {
 		int porcentajeLumen = 0;
 		System.out.println("Ingrese el valor de la lumniciencia que quiere en porcentaje de 0 a 100");
 		porcentajeLumen = sc.nextInt();
-/*		while(porcentajeLumen > 100 || porcentajeLumen < 0) {
+		while(porcentajeLumen > 100 || porcentajeLumen < 0) {
 			System.out.println("El valor que ingreso es incorrecto");
 			System.out.println("Ingrese el valor de la lumniciencia que quiere en porcentaje de 0 a 100");
 			porcentajeLumen = sc.nextInt();		
-		} */
+		} 
 		
 		bombilloOficina.dimer(porcentajeLumen);
-		
 		System.out.println("bombilloOficina->intensidad-> " + bombilloOficina.getIntensidad() + "/" + bombilloOficina.getCantidadLumens());
 		
 		bombilloBodega.apagar();

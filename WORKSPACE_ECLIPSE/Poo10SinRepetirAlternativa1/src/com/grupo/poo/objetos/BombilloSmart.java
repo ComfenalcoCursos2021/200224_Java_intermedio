@@ -39,16 +39,22 @@ public class BombilloSmart extends Bombillo {
 		this.intensidad = intensidad;
 	}
 	
-	public void dimer(int porcentaje) throws Exception {
-		
-		if(porcentaje > 100 || porcentaje < 0) {
-			throw new Exception("FALLO POR EL PORCENTAJE MALO");
-		}
-		
-		int lumen = (cantidadLumens * porcentaje) / 100;
-		this.intensidad = lumen;		
+	public void dimer(int porcentaje) throws Exception {		
+		this.dimerPrivado(porcentaje);		
 	}
 	
+	public void dimer(String palabraPorcentaje) throws Exception  {
+		int porcentaje = Integer.parseInt(palabraPorcentaje);		
+		this.dimerPrivado(porcentaje);
+	}
+	
+	private void dimerPrivado(int porcentaje) throws Exception {
+		if(porcentaje > 100 || porcentaje <0 ) {
+			throw new Exception("FALLO POR EL PORCENTAJE MALO");
+		}
+		int lumen = (cantidadLumens*porcentaje) / 100;
+		this.intensidad = lumen;
+	}
 	
 	
 	
